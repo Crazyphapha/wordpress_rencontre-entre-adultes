@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/*
+Theme Name: petiteannonce
+Author: Armand Fardeau
+Author URI: https://github.com/armandfardeau
+Description: un th├¿me de petite annonce entre particulier
+*/
+.responsiveImg img {
+  max-width: 100%;
+  height: auto; }
+
+/*# sourceMappingURL=main.css.map */
