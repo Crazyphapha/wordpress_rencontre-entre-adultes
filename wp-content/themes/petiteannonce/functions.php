@@ -1,5 +1,10 @@
 <?php
 function ajout_scripts() {
+    // enregistrement d'un nouveau style
+    wp_register_style( 'main-style', get_template_directory_uri() . '/styles/main.css' );
+
+// appel du style dans la page
+    wp_enqueue_style( 'main-style' );
 
 // enregistrement d'un nouveau script
     wp_register_script('bootstrap-script', get_template_directory_uri() . '/scripts/boostrap.min.js', array('jquery'),'1.1', true);
@@ -13,23 +18,21 @@ function ajout_scripts() {
 // appel du style dans la page
     wp_enqueue_style( 'bootstrap-style' );
 
-// enregistrement d'un nouveau style
-    wp_register_style( 'main-style', get_template_directory_uri() . '/styles/main.css' );
 
-// appel du style dans la page
-    wp_enqueue_style( 'main.css' );
+// Register Custom Navigation Walker
+    require_once('wp_bootstrap_navwalker.php');
 
 }
-
+add_action( 'wp_enqueue_scripts', 'ajout_scripts' );
 
 add_action( 'after_setup_theme', 'thumbnails_theme_support' );
 function thumbnails_theme_support(){
     add_theme_support( 'post-thumbnails' );
 }
-add_image_size("thumbnail_annonce_small",600,450,true);
+add_image_size("thumbnail_annonce_small",300,225,true);
 add_image_size("thumbnail_annonce_full",1600,600,false);
 
-add_action( 'wp_enqueue_scripts', 'ajout_scripts' );
+
 
 add_action("init",'create_custom_post_type');
 function create_custom_post_type(){
@@ -57,7 +60,7 @@ function create_custom_post_type(){
         'show_ui'             => true,
         'show_in_menu'        => true,
         'menu_position'       => 2,
-        'menu_icon'           => 'dashicons-universal-access-alt',
+        'menu_icon'           => 'dashicons-heart',
         'show_in_nav_menus'   => true,
         'publicly_queryable'  => true,
         'exclude_from_search' => false,
@@ -116,13 +119,10 @@ function create_new_role(){
 
 }
 
-add_action('init','the_field_multiple');
-function the_field_multiple($array, $separator = ', ', $last_separator = ' et ') {
-    if ( count( $array ) == 1 ) {
-        return reset( $array );
-    }
-    $end_value = array_pop( $array );
-    $list = implode( $separator, $array );
-    return $list . $last_separator . $end_value;
-}
+
+
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'petitannonce' ),
+) );
+
 ?>
