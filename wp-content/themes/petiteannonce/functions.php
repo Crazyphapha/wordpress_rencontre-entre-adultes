@@ -73,6 +73,7 @@ function create_custom_post_type(){
             'edit_post'          => 'edit_annonce',
             'read_post'          => 'read_annonce',
             'create_posts'       => 'create_annonces',
+
         ),
     );
     register_post_type( 'annonce', $args );

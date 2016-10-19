@@ -7,6 +7,31 @@
   text-transform: uppercase;
 }
 
-@mixin border($border,$color){
-  border: $border $color solid;
+@mixin border-radius($radius1:5px, $radius2:$radius1, $radius3:$radius1, $radius4:$radius1) {
+  -webkit-border-radius: $radius1 $radius2 $radius3 $radius4;
+  -moz-border-radius: $radius1 $radius2 $radius3 $radius4;
+  -ms-border-radius: $radius1 $radius2 $radius3 $radius4;
+  border-radius: $radius1 $radius2 $radius3 $radius4;
+}
+
+@mixin margin($margin1:5px, $margin2:0, $margin3:$margin1, $margin4:$margin2) {
+  margin: $margin1 $margin2 $margin3 $margin4;
+}
+
+@mixin background($url){
+  background-image: url($url);
+  min-height: 500px;
+  /* Set background image to fixed (don't scroll along with the page) */
+  background-attachment: fixed;
+  /* Center the background image */
+  background-position: center;
+  /* Set the background image to no repeat */
+  background-repeat: no-repeat;
+  /* Scale the background image to be as large as possible */
+  background-size: cover;
+}
+
+
+%box-shadow{
+  box-shadow: 5px 5px 10px black; // X, Y, Blur, Color
 }

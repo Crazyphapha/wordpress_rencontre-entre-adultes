@@ -8,31 +8,66 @@ Description: un theme de petite annonce entre particulier
 @import "scss/assets";
 
 body{
-
-  background-image: url("../images/couple_by_lake.jpg");
-  min-height: 500px;
-  /* Set background image to fixed (don't scroll along with the page) */
-  background-attachment: fixed;
-  /* Center the background image */
-  background-position: center;
-  /* Set the background image to no repeat */
-  background-repeat: no-repeat;
-  /* Scale the background image to be as large as possible */
-  background-size: cover;
-
+  @include background("../images/couple_by_lake.jpg");
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
 }
+
+.jumbotron{
+  @extend %box-shadow;
+}
+.profil{
+  border:2px solid white;
+  @include  border-radius();
+  background-color:#EEEEEE;
+  padding:10px;
+  margin:10px;
+  @extend %box-shadow;
+
+
+  .responsiveImg{
+    text-align: center;
+    img{
+      overflow:hidden;
+      @include  border-radius();
+    }
+  }
+
+  h3{
+    text-align: center;
+  }
+
+  .content{
+    :nth-child(1){
+      overflow: hidden;
+      text-align: justify;
+      height: 200px;
+    }
+    :nth-child(2){
+      display:block;
+      text-align: right;
+      font-style:italic;
+      font-weight: bold;
+      text-decoration-color: blueviolet;
+      text-decoration: none;
+    }
+  }
+  .profil-type{
+    @include margin();
+  }
+}
+
+
 
 .btn-profil-container{
   text-align: center;
 
+  .btn-profil{
+    @include margin();
+    width: auto;
+    height: auto;
+  }
 }
-.btn-profil{
-  margin: 5px 0 5px 0;
-  width: auto;
-  height: auto;
 
-}
 
 
 

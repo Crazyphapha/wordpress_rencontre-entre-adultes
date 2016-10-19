@@ -28,34 +28,54 @@
             while ( $the_query->have_posts() ) {
                 $the_query->the_post();
                 ?>
-                <section class="profile">
+                <section>
                 <article class="col-md-4" id="annonce-<?php the_ID();?>">
+                    <div class="profil">
+                        <div class="responsiveImg">
+                            <?php
+                            if (has_post_thumbnail()){
+                                the_post_thumbnail("thumbnail_annonce_small");
+                            }
+                            ?>
+                        </div>
+                        <h3><?php the_title();?></h3>
+                        <div class="content">
+                            <div>
+                                <?php the_content();?>
+                            </div>
+                            <a href="<?php the_permalink();?>">La suite...</a>
+                        </div>
+                        <div class="profil-type">
+                            <div class="genre">
+                                <strong>Genre: </strong>
+                                <?php the_field("genre"); ?>
+                            <?php
 
-                    <div class="responsiveImg">
-                        <?php
-                        if (has_post_thumbnail()){
-                            the_post_thumbnail("thumbnail_annonce_small");
-                        }
-                        ?>
-                    </div>
-                    <h3><?php the_title();?></h3>
-                    <p>
-                        <?php the_content();?>
-                    </p>
-                    <div class="">
-                    <div class="genre">
-                        <strong>Genre: </strong>
-                        <?php the_field("genre"); ?>
-                    </div>
-                    <div class="centres-interets">
-                        <strong>Centre d&#39;interets: </strong>
-                        <?php the_field("centres_interets"); ?>
-                    </div>
-                    </div>
-                    <div class="btn-profil-container">
-                        <a href="<?php the_permalink();?>" class="btn btn-default btn-profil" role="button">Voir son profil</a>
-                    </div>
+                                if (get_field("genre")== 'Homme'){
+                                    echo ('<span class="glyphicons glyphicons-gender-male"></span>');
+                                }
+                                elseif(get_field("genre")== 'Femme'){
+                                    echo ('<span class="glyphicons glyphicons-gender-female"></span>');
+                                }
+                                else{
+                                    echo ('<span class="glyphicons glyphicons-gender-intersex"></span>');
+                                }
 
+                            ?>
+                            </div>
+                            <div class="Passion">
+                                <strong>Passion: </strong>
+                                <?php the_field("passion"); ?>
+                            </div>
+                            <div class="ville">
+                                <strong>Ville: </strong>
+                                <?php the_field("ville"); ?>
+                            </div>
+                        </div>
+                        <div class="btn-profil-container">
+                            <a href="<?php the_permalink();?>" class="btn btn-info btn-profil" role="button">Voir son profil</a>
+                        </div>
+                    </div>
 
 
                 </article>

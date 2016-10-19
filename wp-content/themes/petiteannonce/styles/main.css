@@ -4,6 +4,9 @@ Author: Armand Fardeau
 Author URI: https://github.com/armandfardeau
 Description: un theme de petite annonce entre particulier
 */
+.jumbotron, .profil {
+  box-shadow: 5px 5px 10px black; }
+
 body {
   background-image: url("../images/couple_by_lake.jpg");
   min-height: 500px;
@@ -17,12 +20,44 @@ body {
   background-size: cover;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif; }
 
+.profil {
+  border: 2px solid white;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -ms-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #EEEEEE;
+  padding: 10px;
+  margin: 10px; }
+  .profil .responsiveImg {
+    text-align: center; }
+    .profil .responsiveImg img {
+      overflow: hidden;
+      -webkit-border-radius: 5px 5px 5px 5px;
+      -moz-border-radius: 5px 5px 5px 5px;
+      -ms-border-radius: 5px 5px 5px 5px;
+      border-radius: 5px 5px 5px 5px; }
+  .profil h3 {
+    text-align: center; }
+  .profil .content :nth-child(1) {
+    overflow: hidden;
+    text-align: justify;
+    height: 200px; }
+  .profil .content :nth-child(2) {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration-color: blueviolet;
+    text-decoration: none; }
+  .profil .profil-type {
+    margin: 5px 0 5px 0; }
+
 .btn-profil-container {
   text-align: center; }
-
-.btn-profil {
-  margin: 5px 0 5px 0;
-  width: auto;
-  height: auto; }
+  .btn-profil-container .btn-profil {
+    margin: 5px 0 5px 0;
+    width: auto;
+    height: auto; }
 
 /*# sourceMappingURL=main.css.map */
