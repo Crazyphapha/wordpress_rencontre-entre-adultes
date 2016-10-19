@@ -1,4 +1,5 @@
 <?php
+
 function ajout_scripts() {
     // enregistrement d'un nouveau style
     wp_register_style( 'main-style', get_template_directory_uri() . '/styles/main.css' );
