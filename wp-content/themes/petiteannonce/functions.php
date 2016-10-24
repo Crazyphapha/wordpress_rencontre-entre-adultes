@@ -126,6 +126,7 @@ function create_new_role(){
 
 register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'petitannonce' ),
+    'secondary' => __('Secondary Menu', 'petitannonce')
 ) );
 
 ?>
