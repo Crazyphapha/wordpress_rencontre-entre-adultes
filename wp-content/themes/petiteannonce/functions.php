@@ -70,9 +70,10 @@ function create_custom_post_type(){
         'can_export'          => true,
         'rewrite'             => array( 'slug' => 'annonce' ),
         'capabilities' => array(
-            'edit_post'          => 'edit_annonce',
-            'read_post'          => 'read_annonce',
-            'create_posts'       => 'create_annonces',
+            'edit_post' => 'edit_annonce',
+            'read_post' => 'read_annonce',
+            'create_posts'  => 'create_annonces',
+            'delete-post'   => 'delete-annonce',
 
         ),
     );
