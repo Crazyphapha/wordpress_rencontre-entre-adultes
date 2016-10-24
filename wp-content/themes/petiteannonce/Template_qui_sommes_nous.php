@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: A propos
+Template Name: Qui sommes nous
 */
 ?>
 
