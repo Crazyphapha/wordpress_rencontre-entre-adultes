@@ -129,3 +129,9 @@ crashlytics-build.properties
 fabric.properties
 
 /.idea
+
+
+wp-content/plugins/wp-pagenavi/lang/
+\wp-content\themes\petiteannonce\styles\*.css
+\wp-content\themes\petiteannonce\styles\*.map
+
