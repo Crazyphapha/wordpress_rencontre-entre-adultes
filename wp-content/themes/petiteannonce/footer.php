@@ -1,9 +1,9 @@
         <footer class ="footer" id="footer">
-            <section>
+            <div class="container">
                 <nav>
                     <?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>
                 </nav>
-            </section>
+            </div>
         </footer>
 
         <!-- Execution de la fonction wp_footer() obligatoire ! -->
