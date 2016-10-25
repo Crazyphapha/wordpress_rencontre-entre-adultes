@@ -1,5 +1,5 @@
-        <footer class ="footer" id="footer">
-            <div class="container">
+        <footer class ="footer container" id="footer">
+            <div class="footer-container">
                 <nav>
                     <?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>
                 </nav>
