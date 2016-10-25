@@ -9,7 +9,7 @@ Description: un theme de petite annonce entre particulier
 
 body {
   background-image: url("../images/couple_by_lake.jpg");
-  min-height: 500px;
+  max-width: "auto";
   /* Set background image to fixed (don't scroll along with the page) */
   background-attachment: fixed;
   /* Center the background image */

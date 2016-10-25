@@ -25,7 +25,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="<?php echo home_url(); ?>">
+                        <a class="navbar-brand brand" href="<?php echo home_url(); ?>">
                             <?php bloginfo('name'); ?>
                         </a>
                     </div>

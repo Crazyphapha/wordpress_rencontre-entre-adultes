@@ -18,9 +18,9 @@
   margin: $margin1 $margin2 $margin3 $margin4;
 }
 
-@mixin background($url){
+@mixin background($url, $size:"auto"){
   background-image: url($url);
-  min-height: 500px;
+  max-width: $size;
   /* Set background image to fixed (don't scroll along with the page) */
   background-attachment: fixed;
   /* Center the background image */
