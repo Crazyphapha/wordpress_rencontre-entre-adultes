@@ -6,6 +6,7 @@ Description: un theme de petite annonce entre particulier
 */
 
 @import "scss/assets";
+@import "scss/login";
 
 body{
   @include background("../images/couple_by_lake.jpg");
