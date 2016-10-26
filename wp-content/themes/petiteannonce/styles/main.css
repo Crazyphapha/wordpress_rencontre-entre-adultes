@@ -82,12 +82,11 @@ body {
   justify-content: center;
   margin-bottom: 0;
   padding-bottom: 0; }
-  .footer li {
-    display: flex; }
   .footer ul {
     list-style-type: none;
     margin-left: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    display: flex; }
 
 .footer-container {
   padding: 15px; }
