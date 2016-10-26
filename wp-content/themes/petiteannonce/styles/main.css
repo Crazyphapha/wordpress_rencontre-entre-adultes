@@ -29,22 +29,26 @@ Description: un theme de petite annonce entre particulier
 
 .footer {
   width: 100%;
-  display: flex;
-  height: 50px;
+  height: 70px;
   background-color: #F8F8F8;
   justify-content: center;
   margin-bottom: 0;
   padding-bottom: 0; }
-  .footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex; }
-    .footer ul li {
-      margin: 0 10px; }
+  .footer .footer-widget {
+    width: 50rem; }
 
-.footer-container {
-  padding: 15px; }
+.footer-widgets-container {
+  display: flex;
+  justify-content: center; }
+
+#menu-footer_menu {
+  list-style: none; }
+
+#menu-footer_menu-1 {
+  list-style: none; }
+
+#menu-footer_menu-2 {
+  list-style: none; }
 
 .profil, .jumbotron {
   box-shadow: 5px 5px 10px black; }
@@ -108,7 +112,7 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif; }
 
 .container {
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   min-height: 1rem; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,27 +1,34 @@
 @import "assets";
+
 .footer{
   width: 100%;
-  display:flex;
   height: $footer-height;
   background-color:#F8F8F8;
   justify-content: center;
   margin-bottom: 0;
   padding-bottom: 0;
 
-  ul{
-    list-style-type: none;
-    margin:0;
-    padding:0;
-    display:flex;
 
-    li{
-      margin:0 10px;
-    }
-
+  .footer-widget{
+    width:50rem;
   }
 }
 
-.footer-container{
-  padding: 15px;
-
+.footer-widgets-container{
+  display:flex;
+  justify-content:center;
 }
+
+#menu-footer_menu {
+  list-style: none;
+}
+
+#menu-footer_menu-1 {
+  list-style: none;
+}
+
+#menu-footer_menu-2 {
+  list-style: none;
+}
+
+
