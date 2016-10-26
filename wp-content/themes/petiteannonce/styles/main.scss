@@ -30,6 +30,12 @@ body{
     img{
       overflow:hidden;
       @include  border-radius();
+
+      @media (max-width:1186px) {
+        width: 230px;
+        height: auto;
+        text-align:center;
+      }
     }
   }
 
