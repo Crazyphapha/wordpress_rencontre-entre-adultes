@@ -1,0 +1,23 @@
+@import "assets";
+.footer{
+  width: 100%;
+  display:flex;
+  height: $footer-height;
+  background-color:#F8F8F8;
+  justify-content: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+  ul{
+    list-style-type: none;
+    margin-left:0;
+    padding-left:0;
+    display:flex;
+
+  }
+}
+
+.footer-container{
+  padding: 15px;
+
+}

@@ -1,0 +1,60 @@
+@import "assets";
+
+.profil{
+  border:2px solid white;
+  @include  border-radius();
+  background-color:#EEEEEE;
+  padding:10px;
+  margin:10px;
+  @extend %box-shadow;
+
+
+  .responsiveImg{
+    text-align: center;
+    img{
+      overflow:hidden;
+      @include  border-radius();
+
+      @media (max-width:1186px) {
+        width: 230px;
+        height: auto;
+        text-align:center;
+      }
+    }
+  }
+
+  h3{
+    text-align: center;
+  }
+
+  .content{
+    :nth-child(1){
+      overflow: hidden;
+      text-align: justify;
+      height: 200px;
+    }
+    :nth-child(2){
+      display:block;
+      text-align: right;
+      font-style:italic;
+      font-weight: bold;
+      text-decoration-color: blueviolet;
+      text-decoration: none;
+    }
+  }
+  .profil-type{
+    @include margin();
+  }
+}
+
+
+
+.btn-profil-container{
+  text-align: center;
+
+  .btn-profil{
+    @include margin();
+    width: auto;
+    height: auto;
+  }
+}

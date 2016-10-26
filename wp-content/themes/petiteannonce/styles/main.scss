@@ -5,12 +5,13 @@ Author URI: https://github.com/armandfardeau
 Description: un theme de petite annonce entre particulier
 */
 
-//variables
-$footer-height: 50px;
+
 
 @import "scss/assets";
 @import "scss/login";
-
+@import "scss/header";
+@import "scss/footer";
+@import "scss/profil-section";
 body{
   @include background("../images/couple_by_lake.jpg");
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
@@ -19,88 +20,7 @@ body{
 .jumbotron{
   @extend %box-shadow;
 }
-.profil{
-  border:2px solid white;
-  @include  border-radius();
-  background-color:#EEEEEE;
-  padding:10px;
-  margin:10px;
-  @extend %box-shadow;
-
-
-  .responsiveImg{
-    text-align: center;
-    img{
-      overflow:hidden;
-      @include  border-radius();
-
-      @media (max-width:1186px) {
-        width: 230px;
-        height: auto;
-        text-align:center;
-      }
-    }
-  }
-
-  h3{
-    text-align: center;
-  }
-
-  .content{
-    :nth-child(1){
-      overflow: hidden;
-      text-align: justify;
-      height: 200px;
-    }
-    :nth-child(2){
-      display:block;
-      text-align: right;
-      font-style:italic;
-      font-weight: bold;
-      text-decoration-color: blueviolet;
-      text-decoration: none;
-    }
-  }
-  .profil-type{
-    @include margin();
-  }
-}
-
-
-
-.btn-profil-container{
-  text-align: center;
-
-  .btn-profil{
-    @include margin();
-    width: auto;
-    height: auto;
-  }
-}
-
 .container{
   padding-bottom: $footer-height;
   min-height:1rem;
-}
-.footer{
-  width: 100%;
-  display:flex;
-  height: $footer-height;
-  background-color:#F8F8F8;
-  justify-content: center;
-  margin-bottom: 0;
-  padding-bottom: 0;
-
-  ul{
-    list-style-type: none;
-    margin-left:0;
-    padding-left:0;
-    display:flex;
-
-  }
-}
-
-.footer-container{
-  padding: 15px;
-
 }

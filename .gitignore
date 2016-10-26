@@ -90,7 +90,7 @@ $RECYCLE.BIN/
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff:
-.idea/workspace.xml
+.idea/worksplace.xm
 .idea/tasks.xml
 
 # Sensitive or high-churn files:
@@ -132,6 +132,9 @@ fabric.properties
 
 
 wp-content/plugins/wp-pagenavi/lang/
-\wp-content\themes\petiteannonce\styles\*.css
-\wp-content\themes\petiteannonce\styles\*.map
+wp-content/themes/petiteannonce/styles/main.css
+wp-content/themes/petiteannonce/styles/main.css.map
+wp-content/themes/petiteannonce/styles/scss/*.css
+wp-content/themes/petiteannonce/styles/scss/*.map
+
 

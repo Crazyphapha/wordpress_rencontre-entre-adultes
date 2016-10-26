@@ -4,7 +4,10 @@ Author: Armand Fardeau
 Author URI: https://github.com/armandfardeau
 Description: un theme de petite annonce entre particulier
 */
-.jumbotron, .profil {
+.profil, .jumbotron {
+  box-shadow: 5px 5px 10px black; }
+
+.profil, .jumbotron {
   box-shadow: 5px 5px 10px black; }
 
 .login-form {
@@ -12,18 +15,31 @@ Description: un theme de petite annonce entre particulier
   top: 50%;
   left: 50%; }
 
-body {
-  background-image: url("../images/couple_by_lake.jpg");
-  max-width: "auto";
-  /* Set background image to fixed (don't scroll along with the page) */
-  background-attachment: fixed;
-  /* Center the background image */
-  background-position: center;
-  /* Set the background image to no repeat */
-  background-repeat: no-repeat;
-  /* Scale the background image to be as large as possible */
-  background-size: cover;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif; }
+.profil, .jumbotron {
+  box-shadow: 5px 5px 10px black; }
+
+.profil, .jumbotron {
+  box-shadow: 5px 5px 10px black; }
+
+.footer {
+  width: 100%;
+  display: flex;
+  height: 50px;
+  background-color: #F8F8F8;
+  justify-content: center;
+  margin-bottom: 0;
+  padding-bottom: 0; }
+  .footer ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex; }
+
+.footer-container {
+  padding: 15px; }
+
+.profil, .jumbotron {
+  box-shadow: 5px 5px 10px black; }
 
 .profil {
   border: 2px solid white;
@@ -70,25 +86,21 @@ body {
     width: auto;
     height: auto; }
 
+body {
+  background-image: url("../images/couple_by_lake.jpg");
+  max-width: "auto";
+  /* Set background image to fixed (don't scroll along with the page) */
+  background-attachment: fixed;
+  /* Center the background image */
+  background-position: center;
+  /* Set the background image to no repeat */
+  background-repeat: no-repeat;
+  /* Scale the background image to be as large as possible */
+  background-size: cover;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif; }
+
 .container {
   padding-bottom: 50px;
   min-height: 1rem; }
-
-.footer {
-  width: 100%;
-  display: flex;
-  height: 50px;
-  background-color: #F8F8F8;
-  justify-content: center;
-  margin-bottom: 0;
-  padding-bottom: 0; }
-  .footer ul {
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 0;
-    display: flex; }
-
-.footer-container {
-  padding: 15px; }
 
 /*# sourceMappingURL=main.css.map */

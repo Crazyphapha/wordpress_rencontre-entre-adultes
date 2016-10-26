@@ -28,7 +28,7 @@
             while ( $the_query->have_posts() ) {
                 $the_query->the_post();
                 ?>
-                <section>
+                <section class="profil-section">
                     <article class="col-md-4" id="annonce-<?php the_ID();?>">
                         <div class="profil">
                             <div class="responsiveImg">
