@@ -26,7 +26,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand brand" href="<?php echo home_url(); ?>">
-                            <img src="http://www.rencontre-entre-adultes.fr/wp-content/uploads/2016/10/maxresdefault.jpg">
+                            <img src="http://www.rencontre-entre-adultes.fr/wp-content/uploads/2016/10/maxresdefault.png">
                             <?php bloginfo('name'); ?>
                         </a>
                     </div>
