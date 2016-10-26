@@ -1,1 +1,9 @@
 @import "assets";
+
+.navbar-brand{
+  display:flex;
+  img{
+    width:30px;
+    margin-right:5px;
+  }
+}

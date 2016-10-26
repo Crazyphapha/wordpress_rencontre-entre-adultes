@@ -18,6 +18,12 @@ Description: un theme de petite annonce entre particulier
 .profil, .jumbotron {
   box-shadow: 5px 5px 10px black; }
 
+.navbar-brand {
+  display: flex; }
+  .navbar-brand img {
+    width: 30px;
+    margin-right: 5px; }
+
 .profil, .jumbotron {
   box-shadow: 5px 5px 10px black; }
 
