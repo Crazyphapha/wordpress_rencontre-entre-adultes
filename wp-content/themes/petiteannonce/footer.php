@@ -1,6 +1,6 @@
         <footer class ="footer container" id="footer">
-            <div class="footer-container">
-                <nav>
+            <div class="footer-container container-fluid">
+                <nav class="navbar">
                     <?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>
                 </nav>
             </div>
